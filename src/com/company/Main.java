@@ -19,6 +19,12 @@ public class Main {
         int tab2[] = {3, 9, 11, 4, 1, 20, 15};
         int tab3[] = {15, 13, 11, 9, 7, 5, 3, 1};
         System.out.println(binarySearch(tab1, tab1.length, 9));
-        System.out.println(Arrays.toString(Sort.selectionSort(tab2, tab2.length)));
+        Sort.selectionSort(tab1, tab1.length);
+        Sort.split(tab2, tab2.length);
+        Sort.partition(tab3, tab3.length);
+
+        System.out.println(Arrays.toString(tab1));
+        System.out.println(Arrays.toString(tab2));
+        System.out.println(Arrays.toString(tab3));
     }
 }
