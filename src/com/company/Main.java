@@ -18,13 +18,16 @@ public class Main {
         int tab1[] = {1, 3, 5, 7, 9, 11, 13, 15};
         int tab2[] = {3, 9, 11, 4, 1, 20, 15};
         int tab3[] = {15, 13, 11, 9, 7, 5, 3, 1};
+        int tab4[] = {3, 2, 4, 5, 1, 1, 3, 2, 5, 6, 2, 3, 1};
         System.out.println(binarySearch(tab1, tab1.length, 9));
         Sort.selectionSort(tab1, tab1.length);
         Sort.split(tab2, tab2.length);
-        Sort.partition(tab3, tab3.length);
+//        Sort.partition(tab3, tab3.length); nie działą
+//        Sort.countingSort(tab4, tab4.length);
 
         System.out.println(Arrays.toString(tab1));
         System.out.println(Arrays.toString(tab2));
         System.out.println(Arrays.toString(tab3));
+        System.out.println(Arrays.toString(Sort.countingSort(tab4, tab4.length)));
     }
 }
