@@ -29,5 +29,13 @@ public class Main {
         System.out.println(Arrays.toString(tab2));
         System.out.println(Arrays.toString(tab3));
         System.out.println(Arrays.toString(Sort.countingSort(tab4, tab4.length)));
+
+        // Lista
+        DoubleLinkedList list = new DoubleLinkedList();
+        list.push("blaze", "");
+        list.push("it", "");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.retrive(i).getElement());
+        }
     }
 }
