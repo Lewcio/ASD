@@ -32,10 +32,19 @@ public class Main {
 
         // Lista
         DoubleLinkedList list = new DoubleLinkedList();
-        list.push("blaze", "");
-        list.push("it", "");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.retrive(i).getElement());
-        }
+//        list.push("blaze", "e1");
+//        list.push("it", "e2");
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.retrive(i).getElement());
+//        }
+
+        // BST
+        BinarySearchTree bst = new BinarySearchTree();
+        bst.insert(4);
+        bst.insert(2);
+        bst.insert(5);
+        bst.insert(1);
+        bst.insert(6);
+        bst.inOrder();
     }
 }
