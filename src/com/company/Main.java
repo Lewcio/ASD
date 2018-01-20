@@ -40,11 +40,16 @@ public class Main {
 
         // BST
         BinarySearchTree bst = new BinarySearchTree();
-        bst.insert(4);
-        bst.insert(2);
-        bst.insert(5);
-        bst.insert(1);
-        bst.insert(6);
+        for (int value : tab1)
+            bst.insert(value);
+
         bst.inOrder();
+        System.out.println();
+        bst.preOrder();
+        System.out.println();
+        bst.postOrder();
+        System.out.println();
+        System.out.println(bst.member(1));
+        System.out.println(bst.member(10));
     }
 }
