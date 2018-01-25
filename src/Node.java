@@ -1,5 +1,3 @@
-package com.company;
-
 public class Node {
     private String key;
     private Object element;

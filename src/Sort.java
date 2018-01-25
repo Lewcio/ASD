@@ -1,5 +1,3 @@
-package com.company;
-
 public class Sort {
     public static void selectionSort(int tab[], int n) {
         int min, tmp;

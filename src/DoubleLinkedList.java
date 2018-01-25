@@ -1,5 +1,3 @@
-package com.company;
-
 public class DoubleLinkedList {
     private Node first, last;
     private int size;
